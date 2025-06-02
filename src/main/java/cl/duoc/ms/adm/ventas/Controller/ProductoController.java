@@ -1,4 +1,4 @@
-package cl.duoc.ms.adm.ventas.controller;
+package cl.duoc.ms.adm.ventas.Controller;
 
 import org.springframework.web.bind.annotation.*;
 

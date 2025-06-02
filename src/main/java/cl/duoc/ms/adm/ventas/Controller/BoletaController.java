@@ -1,8 +1,8 @@
-package cl.duoc.ms.adm.ventas.controller;
+package cl.duoc.ms.adm.ventas.Controller;
 
 import org.springframework.web.bind.annotation.*;
 
-// Update the import paths below to match the actual location of BoletaDTO and DetalleBoletaDTO
+
 import cl.duoc.ms.adm.ventas.dto.BoletaDTO;
 import cl.duoc.ms.adm.ventas.dto.DetalleBoletaDTO;
 import cl.duoc.ms.adm.ventas.model.Boleta;

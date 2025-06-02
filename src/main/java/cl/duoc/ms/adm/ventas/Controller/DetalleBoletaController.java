@@ -1,11 +1,10 @@
-package cl.duoc.ms.adm.ventas.controller;
+package cl.duoc.ms.adm.ventas.Controller;
 
 import org.springframework.web.bind.annotation.*;
 
-import cl.duoc.ms.adm.ventas.dto.DetalleBoletaDTO;
 import cl.duoc.ms.adm.ventas.model.DetalleBoleta;
 import cl.duoc.ms.adm.ventas.service.DetalleBoletaService;
-
+import cl.duoc.ms.adm.ventas.dto.DetalleBoletaDTO;
 import java.util.List;
 import java.util.stream.Collectors;
 
