@@ -1,5 +1,6 @@
 package cl.duoc.ms.adm.ventas.service;
 
+import java.io.InputStream;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -77,4 +78,14 @@ public class AwsS3Service {
 		DeleteObjectRequest deleteRequest = DeleteObjectRequest.builder().bucket(bucket).key(key).build();
 		s3Client.deleteObject(deleteRequest);
 	}
+
+	public void uploadInputStream(String bucket, String key, InputStream inputStream, long contentLength) {
+    PutObjectRequest putObjectRequest = PutObjectRequest.builder()
+            .bucket(bucket)
+            .key(key)
+            .contentType("text/plain")
+            .contentLength(contentLength)
+            .build();
+    s3Client.putObject(putObjectRequest, RequestBody.fromInputStream(inputStream, contentLength));
+}
 }
